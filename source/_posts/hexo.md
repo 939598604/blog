@@ -6,8 +6,8 @@ img: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552126
 top: true
 cover: true
 coverImg: https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1552108537&di=ae81bd43cec59233982c93668a92c6b0&src=http://pic19.nipic.com/20120308/3145425_161900516000_2.jpg
-password: 123
-toc: false
+#password: 123
+toc: true
 mathjax: false
 summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
 categories: Markdown
@@ -21,9 +21,9 @@ tags:
 
 
 
-### hexo
+## hexo
 
-#### 一、 写博客
+### 一、 写博客
 
 1.定位到我们的项目的根目录，执行命令：
 
@@ -88,7 +88,7 @@ hexo.on('new', function(data){
 
 然后再创建文件输入命令之后就会自动打开Typora编辑器来编辑了 
 
-#### 二、更换 Hexo 主题及样式
+### 二、更换 Hexo 主题及样式
 
 1、默认主题
 我们通过 hexo init 初始化的网站，使用的是 hexo 默认的主题样式 lanscape，位于 xxx/themes/lanscape 目录，我们可以到官网的 主题市场  根据自己的喜好更换其它的主题。
