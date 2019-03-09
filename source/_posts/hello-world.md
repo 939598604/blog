@@ -6,7 +6,7 @@ img: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552118
 top: true
 cover: true
 coverImg: https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1552108537&di=ae81bd43cec59233982c93668a92c6b0&src=http://pic19.nipic.com/20120308/3145425_161900516000_2.jpg
-password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+password: 123
 toc: false
 mathjax: false
 summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要

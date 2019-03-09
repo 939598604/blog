@@ -111,7 +111,49 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  
+# hexo-admin authentification
+admin:
+  username: 939598604
+  password_hash: $2a$10$O6wna1Ct60xCiS9ZD4YXfuiTmF5.qBwXJXVbw/xETXeGVKYZ3s5oW
+  secret: chenjinhua
+#hexo-blog-encrypt插件
+encrypt:
+    enable: true 
+    
+#开启hexo-all-minifier
+all_minifier: true
+js_concator:
+  enable: false
+  bundle_path: '/js/bundle.js'
+  front: false
+  silent: false
+html_minifier:
+  enable: true
+  ignore_error: false
+  silent: false
+  exclude:
+css_minifier:
+  enable: true
+  silent: false
+  exclude: 
+    - '*.min.css'
+js_minifier:
+  enable: true
+  mangle: true
+  silent: false
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+  silent: false    
+
 #menu_icons:
 #  enable:true
 # Deployment
