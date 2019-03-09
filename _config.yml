@@ -1,0 +1,122 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 陈博客
+subtitle: 记录点滴
+description: 好记性不如烂笔头，工作、学习和生活过程中的点点滴滴、关键知识点都需要记录，并不时拿出来阅读和总结，对过往知识的回顾和总结，为今后工作提供能量。本博客主要记录工作中解决的技术难题、日常系统性复习过程中的相关笔记等。互联网行业技术更新太快，很多技术每天都需要接触，经常进行系统性的学习、复习与总结，能够从更高的角度对整个技术栈有更好的掌握由于平时工作也比较忙，博客中相关知识的系列章节更新较慢，慢工出细活吧。最后送上一句鸡汤共勉：“你不努力，谁也给不了你想要的生活！”
+keywords:
+author: Mr chen
+language: zh-CN
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://www.jinhuachen.top
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: false
+#  line_number: false
+#  auto_detect: false
+#  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 18
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-matery
+
+#menu:
+#  home: / || /home
+#  about: /about || user
+#  tags: /tags/ || tags
+#  categories: /categories/ || th
+#  archives: /archives/ || archive
+
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
+  
+#使用到了 hexo-generator-search 的 Hexo 插件来做内容搜索
+search:
+  path: search.xml
+  field: post
+
+  #文章字数统计插件（可选的）
+wordCount:
+  enable: false # 将这个值设置为 true 即可.
+  postWordCount: true
+  min2read: true
+  totalCount: true  
+  
+ #添加 RSS 订阅支持
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  
+#menu_icons:
+#  enable:true
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: git@github.com:939598604/939598604.github.io.git
+  branch: master
