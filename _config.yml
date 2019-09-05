@@ -73,14 +73,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: 3-hexo  
+## theme: hexo-theme-matery
 
-#menu:
-#  home: / || /home
-#  about: /about || user
-#  tags: /tags/ || tags
-#  categories: /categories/ || th
-#  archives: /archives/ || archive
+menu:
+  home: / || /home
+  about: /about || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  guestbook: /guestbook
 
 
 prism_plugin:
@@ -162,3 +164,7 @@ deploy:
   type: git
   repository: git@github.com:939598604/939598604.github.io.git
   branch: master
+server:
+  port: 4000
+  compress: true
+  header: true

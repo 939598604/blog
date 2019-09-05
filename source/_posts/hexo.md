@@ -2,38 +2,18 @@
 title: hexo
 date: 2019-03-09 11:29:24
 author: 陈锦华
-img: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552126178244&di=f91e35bd99226c1869d4a6ad7af21e26&imgtype=0&src=http%3A%2F%2Fimg.linux.net.cn%2Fdata%2Fattachment%2Falbum%2F201405%2F24%2F114507d5op5pe5sdfy2595.jpg
-top: true
-cover: true
-coverImg: https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1552108537&di=ae81bd43cec59233982c93668a92c6b0&src=http://pic19.nipic.com/20120308/3145425_161900516000_2.jpg
-#password: 123
+password: 123
 toc: true
-mathjax: false
-summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-categories: Markdown
+categories: hexo
 tags:
-  - Typora
-  - Markdown
-
+  - hexo
 ---
-
-
-
-
 
 ## hexo
 
 ### 一、 写博客
 
 1.定位到我们的项目的根目录，执行命令：
-
-```java
-public static void main(String[] args) {
-    Stalker.run(() -> new MyTestService().hello());
-}
-```
-
-
 
 ```
 hexo new 'hexo'
@@ -45,6 +25,30 @@ hexo new 'hexo'
 title: hello_hexo
 date: 2019-03-09 11:29:24
 tags:
+```
+
+3.创建一个页面
+
+```bash
+$ hexo new "My New Post"
+```
+
+4.运行服务器
+
+```bash
+$ hexo server
+```
+
+5.生成文件
+
+```bash
+$ hexo generate
+```
+
+6.部署服务
+
+```bash
+$ hexo deploy
 ```
 
 一般完整格式如下：
